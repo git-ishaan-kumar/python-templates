@@ -12,7 +12,7 @@ client = genai.Client(api_key=os.environ['GEMINI_API_KEY'])
 """
 HELPER FUNCTION
 """
-def get_response(chat_context, model='gemini-2.5-flash', temperature=1.0, max_tokens=500):
+def get_response(chat_context, model='gemini-3.1-flash-lite', temperature=0.1, max_tokens=1000):
     system_instruction = None
     formatted_contents = []
     
